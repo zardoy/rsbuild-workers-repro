@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "rsbuild dev",
+    "start": "pnpm build && pnpm preview",
+    "preview": "rsbuild preview",
+    "start-dev": "rsbuild dev",
     "build": "rsbuild build",
     "build:single-html": "SINGLE_HTML_BUILD=true rsbuild build"
   },
