@@ -1,5 +1,6 @@
 onmessage = (event) => {
-    Promise.withResolvers()
+    //@ts-ignore
+    // Promise.withResolvers()
     console.log(`Worker says ${event.data}`)
 }
 
