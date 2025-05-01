@@ -1,5 +1,7 @@
+import Worker from './comp.worker.ts'
+
 console.log('Starting worker...')
-const worker = new Worker(new URL('./comp.worker.ts', import.meta.url))
+const worker = new Worker()
 
 worker.onmessage = (event) => {
     console.log(`In main thread: ${event.data}`)
