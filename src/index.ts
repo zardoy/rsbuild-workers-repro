@@ -1,3 +1,4 @@
+console.log('Starting worker...')
 const worker = new Worker(new URL('./comp.worker.ts', import.meta.url))
 
 worker.onmessage = (event) => {

@@ -1,3 +1,5 @@
+console.log('From worker: started')
+
 onmessage = (event) => {
     //@ts-ignore
     Promise.withResolvers()
